@@ -1,5 +1,6 @@
 {
-    "directory_name": "Hello",
-    "file_name": "Howdy",
-    "greeting_recipient": "Julie"
+    "repo_name": "new_project",
+    "file_name": "main",
+    "greeting_recipient": "riley",
+    "python_version": "3.10"
 }

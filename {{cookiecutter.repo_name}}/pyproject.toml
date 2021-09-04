@@ -1,19 +1,16 @@
 [tool.poetry]
-name = "python-starter"
+name = "{{cookiecutter.repo_name}}"
 version = "0.1.0"
-description = "python-starter cookiecutter for new projects"
-authors = ["Riley <rileymshea@gmail.com>"]
-homepage = "https://github.com/rileymshea/python-starter"
-repository = "https://github.com/rileymshea/python-starter"
-keywords = ["python-starter"]
+description = ""
+authors = ["Riley Shea <rileymshea@gmail.com>"]
 readme = "README.md"
-packages = [{ include = "python_starter" }]
-
 
 [tool.poetry.dependencies]
-python = "~3.10"
+python = "~{{cookiecutter.python_version}}"
 GitPython = "^3.1.20"
 
+[tool.poetry.scripts]
+{{cookiecutter.repo_name}} = "{{cookiecutter.repo_name}}.main:cli"
 
 [tool.poetry.group.dev.dependencies]
 black = "^21.8-beta.0"
