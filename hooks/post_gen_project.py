@@ -51,7 +51,7 @@ async def main():
             "git init && git add --all && git commit -m 'initial commit'"
         ),
         asyncio.create_subprocess_shell(
-            "virtualenv -p python3.10 .venv && . .venv/bin/activate && poetry install"
+            "virtualenv -p python3.10 .venv && . .venv/bin/activate && poetry install && code ."
         ),
     )
 
